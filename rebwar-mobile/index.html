@@ -4,27 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rebwar Mobile | Contact Page</title>
-    <link rel="icon" href="logo2.png" sizes="32x32">
-    <link rel="icon" href="logo2.png" sizes="64x64">
-    <link rel="icon" href="logo2.png" sizes="96x96">
-    <link rel="icon" href="logo2.png" sizes="128x128">
-    <link rel="icon" href="logo2.png" sizes="192x192">
-    <link rel="icon" href="logo2.png" sizes="256x256">
-    <link rel="icon" href="logo2.png" sizes="512x512">
 
-    <!-- آیکون‌ها برای اپل -->
-    <link rel="apple-touch-icon" href="logo2.png" sizes="180x180">
-    
-    <!-- آیکون‌های مناسب اندروید -->
-    <link rel="icon" href="logo2.png" sizes="192x192">
-    <link rel="manifest" href="/manifest.json">
+  <!-- آیکون‌ها -->
+  <link rel="icon" href="logo2.png" sizes="32x32">
+  <link rel="icon" href="logo2.png" sizes="64x64">
+  <link rel="icon" href="logo2.png" sizes="96x96">
+  <link rel="icon" href="logo2.png" sizes="128x128">
+  <link rel="icon" href="logo2.png" sizes="192x192">
+  <link rel="icon" href="logo2.png" sizes="256x256">
+  <link rel="icon" href="logo2.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="logo2.png" sizes="180x180">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- فونت -->
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
 
   <style>
+    /* بک‌گراند تار */
     body {
       margin: 0;
       font-family: 'Vazirmatn', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2b2b3f, #01377a, #41ff9d);
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -32,14 +31,21 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      animation: gradientShift 8s ease infinite;
-      background-size: 400% 400%;
+      background: url('logo2.png') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
     }
 
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      filter: blur(15px) brightness(0.5);
+      z-index: -1;
     }
 
     .avatar {
@@ -50,18 +56,24 @@
       margin-bottom: 20px;
       box-shadow: 0 0 20px rgba(255,255,255,0.4);
       transition: transform 0.3s ease;
+      z-index: 1;
+      position: relative;
     }
     .avatar:hover { transform: scale(1.08); }
 
     h1 {
       font-size: 1.7em;
       margin-bottom: 10px;
+      z-index: 1;
+      position: relative;
     }
 
     p {
       font-size: 1.05em;
       opacity: 0.9;
       margin-bottom: 30px;
+      z-index: 1;
+      position: relative;
     }
 
     .contact {
@@ -70,6 +82,8 @@
       gap: 14px;
       width: 85%;
       max-width: 400px;
+      z-index: 1;
+      position: relative;
     }
 
     .contact a {
@@ -103,7 +117,9 @@
       margin-top: 30px;
       font-size: 0.85em;
       opacity: 0.8;
-      color: #000;
+      color: #fff;
+      z-index: 1;
+      position: relative;
     }
   </style>
 </head>
@@ -124,24 +140,20 @@
 
     <!-- Instagram -->
     <a href="https://instagram.com/mobile.Rebwar" target="_blank">
-      <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
       Instagram 
     </a>
 
-     <a href="https://instagram.com/Rebwar.feizollahbaygi" target="_blank">
-      <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+    <a href="https://instagram.com/Rebwar.feizollahbaygi" target="_blank">
       Instagram 2
     </a>
 
     <!-- WhatsApp -->
     <a href="https://wa.me/989143822219" target="_blank">
-      <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
       WhatsApp
     </a>
 
     <!-- Telegram -->
     <a href="https://t.me/Rebwarmob" target="_blank">
-      <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
       Telegram
     </a>
 
