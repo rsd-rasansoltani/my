@@ -2,7 +2,7 @@
   "name": "Rebwar-mobile",
   "short_name": "Rebwar",
   "description": "کارت ویزیت آنلاین",
-  "start_url": "/",
+  "start_url": "/rebwar-mobile",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#007AFF",
