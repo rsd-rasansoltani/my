@@ -1,8 +1,8 @@
 {
-  "name": "H4baCrsd",
-  "short_name": "H4ba",
-  "description": "شبکه خبری هلدینگ فوربا راسان دیزاین سیاسی",
-  "start_url": "/",
+  "name": "payman Contact",
+  "short_name": "payman",
+  "description": "Sponsored by Rasan’s Portfolio © 2025",
+  "start_url": "/payman-rasoolii",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#007AFF",
@@ -43,4 +43,5 @@
       "type": "image/png"
     }
   ]
+
 }
