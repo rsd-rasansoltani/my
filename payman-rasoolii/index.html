@@ -15,10 +15,19 @@
     <link rel="manifest" href="manifest.json">
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
   <style>
+    /* فقط این بخش بک‌گراند تغییر کرد — بقیه همانِ اصلی شماست */
     body {
       margin: 0;
       font-family: 'Vazirmatn', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #000000, #808080, #000000);
+
+      /* اپل استایل: لوگوی کوچک اپل (درون‌خطی SVG) + گرادینت متحرک */
+      background:
+        url("apple.webp") repeat,
+        linear-gradient(135deg, #c4c4c4, #080808, #464646, #000000);
+
+      /* اندازه: اولی برای لوگوهای اپل، دومی برای گرادینت متحرک */
+      background-size: 64px 64px, 400% 400%;
+      background-blend-mode: overlay;
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -26,14 +35,15 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      animation: gradientShift 8s ease infinite;
-      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
     }
 
     @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% { background-position: 0 0, 0% 50%; }
+      50% { background-position: 120px 80px, 100% 50%; }
+      100% { background-position: 0 0, 0% 50%; }
     }
 
     .avatar {
@@ -104,7 +114,7 @@
 <body>
 
   <img class="avatar" src="logo2.png" alt="Profile Picture">
-  <h1>Hello, I'm Payman!</h1>    
+  <h1>Apple ID</h1>    
   <p>Welcome to my cheerful contact page </p>
 
   <div class="contact">
@@ -120,6 +130,8 @@
   <strong>Official Sponsor</strong><br>
   © 2025 Rasan’s Portfolio<br>
   <em>Supporting creativity & innovation</em>
+  <br>
+  <img src="https://rasandesign.ir/images/cleanstart_logo.png" alt="" width="100px">
 </footer>
 
 </a>
