@@ -8,40 +8,39 @@
   "theme_color": "#007AFF",
   "icons": [
     {
-      "src": "logo2.png",
+      "src": "apple.webp",
       "sizes": "72x72",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "logo2.png",
+      "src": "apple.webp",
       "sizes": "96x96",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "logo2.png",
+      "src": "apple.webp",
       "sizes": "128x128",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "logo2.png",
+      "src": "apple.webp",
       "sizes": "144x144",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "logo2.png",
+      "src": "apple.webp",
       "sizes": "152x152",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "logo2.png",
+      "src": "apple.webp",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "logo2.png",
+      "src": "apple.webp",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/webp"
     }
   ]
-
 }
