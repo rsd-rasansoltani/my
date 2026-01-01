@@ -2,7 +2,7 @@
   "name": "auto mansory",
   "short_name": "auto mansory",
   "description": "کارت ویزیت آنلاین ساخته شده با راسان دیزاین",
-  "start_url": "/auto__mansory",
+  "start_url": "/auto.mansory",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#007AFF",
