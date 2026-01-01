@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>auto mansory Contact Page</title>
+    <link rel="icon" href="logo2.png" sizes="32x32">
+  <link rel="icon" href="logo2.png" sizes="64x64">
+  <link rel="icon" href="logo2.png" sizes="96x96">
+  <link rel="icon" href="logo2.png" sizes="128x128">
+  <link rel="icon" href="logo2.png" sizes="192x192">
+  <link rel="icon" href="logo2.png" sizes="256x256">
+  <link rel="icon" href="logo2.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="logo2.png" sizes="180x180">
+  <link rel="manifest" href="manifest.json">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2b2b3f, #225825, #008d0e);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      animation: gradientShift 8s ease infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1em;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 85%;
+      max-width: 400px;
+    }
+
+    .contact a,
+    .contact button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      backdrop-filter: blur(4px);
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .contact a:hover,
+    .contact button:hover {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.05);
+    }
+
+    .contact a i,
+    .contact button i {
+      margin-right: 10px;
+    }
+
+    /* جعبه نمایش آدرس */
+    #addressBox {
+      display: none;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.35);
+      color: #fff;
+      min-height: 40px;
+      align-self: center;
+      max-width: 400px;
+      width: 85%;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+      direction: rtl;
+      font-weight: 600;
+      transition: transform 0.18s ease, opacity 0.18s ease;
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+
+    #addressBox.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.8em;
+      opacity: 0.7;
+    }
+
+    /* ریسپانسیو */
+    @media (max-width: 420px) {
+      .avatar { width: 100px; height: 100px; }
+      h1 { font-size: 1.2em; }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <img class="avatar" src="logo.png" alt="Profile Picture">
+  <h1>Auto mansory</h1>
+  <p>Welcome to Auto mansory cheerful contact page </p>
+
+  <div class="contact">
+    <a href="https://instagram.com/auto.mansory" target="_blank"><i class="fab fa-instagram"></i> Instagram 1</a>
+    <a href="https://instagram.com/auto__mansory" target="_blank"><i class="fab fa-instagram"></i> Instagram 2</a>
+    <a href="https://t.me/AUTO_MANSORY" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+    <a href="tel:+989122077217"><i class="fas fa-phone"></i> mobile phone 1 </a>
+    <a href="tel:+989121070092"><i class="fas fa-phone"></i> mobile phone 2 </a>
+    <a href="tel:+982122070092"><i class="fas fa-phone"></i>  phone  </a>
+    <a href="https://chat.whatsapp.com/JDYbwUh9YiT5pyHjdkIFLR?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNTY3MDY3MzQzMzUyNDI3AAGnWfxlnVAkXsg2UMrE3rKjeO4ZggZM55r2me5xWj7Kpl0d5PRuA6D7wvrEiMk_aem_xSMpXnnvHnRTZYVNsjBS2w"><i class="fas fa-phone"></i>  WhatsApp 1  </a>
+    <a href="https://chat.whatsapp.com/JDYbwUh9YiT5pyHjdkIFLR?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNTY3MDY3MzQzMzUyNDI3AAGnSW8cn2K7ang-T0ChMKO5GjdO4lbVINlR_3kTZ-wzWTtT5C-hfJF9khJB8AA_aem_77VUgyajxhEsRp6m2wB-ZA"><i class="fas fa-phone"></i>  WhatsApp 2 </a>
+ <button id="addressBtn" type="button" aria-controls="addressBox" aria-expanded="false">
+      <i class="fas fa-map-marker-alt"></i> Address
+    </button>
+
+    <!-- جعبه‌ای که بعد از کلیک متن "پاساژ عرفانی" را نمایش می‌دهد -->
+    <div id="addressBox" role="status" aria-live="polite"></div>
+  </div>
+
+<a href="https://rasandesign.ir/" style="text-decoration: none; color: rgb(255, 255, 255);">
+<footer>
+  <strong>Official Sponsor</strong><br>
+  © 2025 Rasan’s Portfolio<br>
+  <em>Supporting creativity & innovation</em>
+  <br>
+  <img src="https://rasandesign.ir/images/cleanstart_logo.png" alt="" width="100px">
+</footer>
+
+</a>
+
+<script>
+  (function(){
+    const addrBtn = document.getElementById('addressBtn');
+    const addrBox = document.getElementById('addressBox');
+
+    // وقتی کلیک شد، متن مورد نظر را نمایش می‌دهد
+    addrBtn.addEventListener('click', function(){
+      // مقدار متن را ست می‌کنیم — درخواستی که گفتی:
+      const addressText = 'تهران : سعادت آباد ، فرحزادی ، پ || سقز :بلوار مادر ، روبروی دبستان شاهد';
+
+      // اگر همین الان نمایش داده شده بود، باز هم دوباره نشان می‌دهیم (یا می‌توانید toggle کنید)
+      addrBox.textContent = addressText;
+      addrBox.classList.add('show');
+
+      // برای دسترسی: aria-expanded
+      addrBtn.setAttribute('aria-expanded', 'true');
+
+      // (اختیاری) بعد از 5 ثانیه جعبه را مخفی کن — اگر نخواستید خط زیر را حذف کنید
+      setTimeout(() => { addrBox.classList.remove('show'); addrBtn.setAttribute('aria-expanded', 'false'); }, 7000);
+    });
+  })();
+</script>
+</body>
+</html>
