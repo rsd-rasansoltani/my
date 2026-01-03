@@ -1,23 +1,159 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Redirect</title>
+    <title>ارتباط با راسان دیزاین</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- ریدایرکت فوری -->
-    <meta http-equiv="refresh" content="0; url=https://rasandesign.ir">
-
-    <!-- ریدایرکت قطعی (قوی‌تر) -->
-    <script>
-        window.location.replace("https://rasandesign.ir");
-    </script>
+    <!-- Shabnam Font -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.1/dist/font-face.css" rel="stylesheet">
 
     <style>
         body {
-            display: none;
+            margin: 0;
+            background-color: #f4f6f8;
+            font-family: "Shabnam", sans-serif;
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #afafaf;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        p.main-text {
+            font-size: 17px;
+            line-height: 2.2;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        p.en-text {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 35px;
+            direction: ltr;
+            text-align: left;
+        }
+
+        ul.contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.contact-list li {
+            margin: 18px 0;
+            font-size: 16px;
+        }
+
+        ul.contact-list a {
+            color: #2f00ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 13px;
+            color: #444;
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            body {
+                background: none;
+            }
+
+            .container {
+                margin: 0;
+                max-width: 100%;
+                padding: 40px;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            a::after {
+                content: " (" attr(href) ")";
+                font-size: 12px;
+                color: #555;
+                direction: ltr;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
+
 <body>
+    <div class="container">
+        <h1>شرکت برنامه‌نویسی و تبلیغاتی راسان دیزاین</h1>
+
+        <p class="main-text">
+            جهت خرید، صدور کارت ویزیت آنلاین، یا انجام هرگونه ویرایش و تغییر در کارت ویزیت خود،
+            خواهشمند است از طریق راه‌های ارتباطی زیر با شرکت برنامه‌نویسی و تبلیغاتی
+            <strong>راسان دیزاین</strong>
+            در ارتباط باشید.
+        </p>
+
+        <p class="en-text">
+            For online business card purchase, issuance, editing, or updates,
+            please contact Rasan Design Company using the methods below.
+        </p>
+
+        <ul class="contact-list">
+            <li>تلگرام :
+                <a href="https://t.me/rasansoltani">t.me/rasansoltani</a>
+            </li>
+
+            <li>شماره موبایل :
+                <a href="tel:+989032047444">00989032047444</a>
+            </li>
+
+            <li>شماره موبایل دفتر آمریکا :
+                <a href="tel:+13303332388">0013303332388</a>
+            </li>
+
+            <li>اینستاگرام :
+                <a href="https://instagram.com/Rasansoltani">instagram.com/Rasansoltani</a>
+            </li>
+
+            <li>وب‌سایت :
+                <a href="https://rasandesign.ir">rasandesign.ir</a>
+            </li>
+
+            <li>ایمیل :
+                <a href="mailto:ad@4ba.ir">ad@4ba.ir</a>
+            </li>
+        </ul>
+
+        <a href="https://rasandesign.ir/" style="text-decoration: none; color: rgb(255, 255, 255);">
+            <footer>
+              <strong>Official Sponsor</strong><br>
+              © 2025 Rasan’s Portfolio<br>
+              <em>Supporting creativity & innovation</em>
+              <br>
+              <img src="https://rasandesign.ir/images/cleanstart_logo.png" alt="" width="100px">
+            </footer>
+            
+            </a>
+    </div>
 </body>
 </html>
