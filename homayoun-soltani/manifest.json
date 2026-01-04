@@ -1,0 +1,46 @@
+{
+  "name": "Homayoun Soltani",
+  "short_name": "homayoun soltani",
+  "description": "کارت ویزیت آنلاین ساخته شده با راسان دیزاین",
+  "start_url": "/homayoun-soltani",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#007AFF",
+  "icons": [
+    {
+      "src": "logo2.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "logo2.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "logo2.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "logo2.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "logo2.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "logo2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
