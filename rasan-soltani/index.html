@@ -115,6 +115,29 @@
     <a href="https://Rasandesign.ir" target="_blank"><i class="fas fa-globe"></i> Website 1</a>
     <a href="https://4ba.ir" target="_blank"><i class="fas fa-globe"></i> Website 2</a>
   </div>
+<script>
+(function () {
+  const ua = navigator.userAgent;
+  let device = "Desktop";
+
+  if (/android/i.test(ua)) device = "Android";
+  else if (/iphone|ipad|ipod/i.test(ua)) device = "iOS";
+  else if (/windows/i.test(ua)) device = "Windows";
+  else if (/mac/i.test(ua)) device = "Mac";
+
+  fetch("https://my.r8sansoltani.workers.dev/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      site: window.location.href,
+      ua: ua,
+      device: device
+    })
+  });
+})();
+</script>
 
 
         <a href="https://my.4ba.ir" style="text-decoration: none; color: rgb(255, 255, 255);">
