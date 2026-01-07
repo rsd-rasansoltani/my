@@ -5,53 +5,103 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Rasan Contact Page</title>
 <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Vazirmatn', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2b2b3f, #2b80ff, #ff416c);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      animation: gradientShift 8s ease infinite;
-      background-size: 400% 400%;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    h1 { font-size: 2em; margin-bottom: 20px; }
-    form { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 400px; }
-    form input, form textarea {
-      padding: 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 14px;
-      width: 100%; box-sizing: border-box; background: rgba(255, 255, 255, 0.05); color: #fff; outline: none;
-    }
-    form textarea { resize: vertical; min-height: 100px; }
-    button {
-      padding: 12px; border-radius: 10px; border: none;
-      background: rgba(255,255,255,0.1); color: #fff; font-weight: bold;
-      cursor: pointer; transition: background 0.3s, transform 0.2s; backdrop-filter: blur(4px);
-    }
-    button:hover { background: rgba(255,255,255,0.2); transform: scale(1.05); }
-    .status { margin-top: 8px; font-size: 0.9em; }
-    .status.success { color: #4caf50; }
-    .status.error { color: #ff5252; }
-    footer { margin-top: 30px; font-size: 0.8em; opacity: 0.7; }
-    input::placeholder,
-textarea::placeholder {
-    color: white;   /* رنگ سفید */
-    opacity: 1;     /* برای بعضی مرورگرها لازم است */
+ <style>
+  body {
+  margin: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b3f, #2b80ff, #ff416c);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  animation: gradientShift 8s ease infinite;
+  background-size: 400% 400%;
+  padding: 20px;
+  box-sizing: border-box;
 }
-  </style>
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 { 
+  font-size: 2em; 
+  margin-bottom: 20px; 
+}
+
+form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+  width: 100%; 
+  max-width: 400px; 
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px; /* افزایش فونت برای جلوگیری از زوم در آیفون */
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  outline: none;
+}
+
+form textarea { 
+  resize: vertical; 
+  min-height: 100px; 
+}
+
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  backdrop-filter: blur(4px);
+}
+
+button:hover { 
+  background: rgba(255,255,255,0.2); 
+  transform: scale(1.05); 
+}
+
+.status { 
+  margin-top: 8px; 
+  font-size: 0.9em; 
+}
+
+.status.success { 
+  color: #4caf50; 
+}
+
+.status.error { 
+  color: #ff5252; 
+}
+
+footer { 
+  margin-top: 30px; 
+  font-size: 0.8em; 
+  opacity: 0.7; 
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;   /* رنگ سفید */
+  opacity: 1;     /* برای بعضی مرورگرها لازم است */
+}
+
+</style>
 </head>
 <body>
 
