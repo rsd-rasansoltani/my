@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+	<head>
+		<title>Contact Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			form {
+				max-width: 420px;
+				margin: 2em auto 0;
+			}
+
+			form input,
+			form textarea {
+				width: 100%;
+				margin-bottom: 12px;
+				padding: 10px;
+				border-radius: 6px;
+				border: 1px solid #ccc;
+				font-size: 14px;
+			}
+
+			form textarea {
+				min-height: 120px;
+				resize: vertical;
+			}
+
+			form button {
+				width: 100%;
+				padding: 10px;
+				border-radius: 6px;
+				border: none;
+				background: #000;
+				color: #fff;
+				font-size: 15px;
+				cursor: pointer;
+			}
+
+			form button:hover {
+				opacity: 0.85;
+			}
+
+			.status {
+				margin-top: 10px;
+				font-size: 14px;
+				text-align: center;
+			}
+            .back-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 1000;
+	text-decoration: none;
+	background: #00000036;
+	color: #fff;
+	padding: 8px 14px;
+	border-radius: 6px;
+	font-size: 14px;
+	transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+	opacity: 0.8;
+}
+
+		</style>
+	</head>
+
+	<body class="is-preload">
+        <a href="index.html" class="back-btn">← Back</a>
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+				<header id="header">
+					<h1 style="color:black;">Contact Me</h1>
+					<p style="color:black;">
+						Feel free to send me a message
+					</p>
+
+					<!-- Contact Form -->
+					<form id="contactForm">
+						<input type="text" name="fullname" placeholder="Full Name" required />
+						<input type="email" name="email" placeholder="Email (optional)" />
+						<input type="text" name="phone" placeholder="Phone (optional)" />
+						<input type="text" name="subject" placeholder="Subject" required />
+						<textarea name="message" placeholder="Message" required></textarea>
+						<button type="submit">Send</button>
+						<div id="status" class="status"></div>
+					</form>
+
+				</header>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<span class="copyright"></span>
+				</footer>
+
+			</div>
+		</div>
+
+		<script>
+			window.onload = function() {
+				document.body.classList.remove('is-preload');
+			}
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() {
+				document.body.scrollTop = 0;
+			}
+		</script>
+        <script>
+  const form = document.getElementById('contactForm');
+  const statusDiv = document.getElementById('status');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    statusDiv.textContent = "Sending... ⏳";
+
+    const data = Object.fromEntries(new FormData(form));
+
+    try {
+      const res = await fetch('https://my.r8sansoltani.workers.dev/?chat=7650517255', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.status === "ok") {
+        statusDiv.textContent = "✅ Message sent successfully!";
+        form.reset();
+      } else {
+        statusDiv.textContent = "❌ Error sending message: " + (result.message || 'Unknown error');
+      }
+
+    } catch (err) {
+      statusDiv.textContent = "❌ Error sending message: " + err.message;
+    }
+  });
+</script>
+
+	</body>
+</html>
